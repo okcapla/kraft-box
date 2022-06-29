@@ -1528,7 +1528,7 @@ function rotateY(angle) {
 }
 
 function updateControls() {
-  document.getElementById('inputFluteHidden').value = settings.flute;
+  document.getElementById('inputFluteHidden').value = 0.16;
   document.getElementById('inputLengthHidden').value = settings.size.length;
   document.getElementById('inputWidthHidden').value = settings.size.width;
   document.getElementById('inputHeightHidden').value = settings.size.height;
@@ -1539,7 +1539,7 @@ function updateControls() {
   document.getElementById('outputTotalPrice').textContent = totalPrice;
   document.getElementById('inputQuantityRange').value = settings.quantity;
   document.getElementById('inputQuantityInput').value = settings.quantity;
-  document.getElementById('inputFlute').value = settings.flute;
+  document.getElementById('inputFlute').value = 0.16;
   document.getElementById('inputLength').value = settings.size.length;
   document.getElementById('inputWidth').value = settings.size.width;
   document.getElementById('inputHeight').value = settings.size.height;
