@@ -408,4 +408,12 @@ input:focus {outline:none!important;}
 
 .result_value {
  text-align: left;
+ color: black; 
+ font-size: 13px;
 }
+
+.row_title {
+  text-align: left;
+  color: #6b9ca1;
+  font-size: 15px;
+ }
