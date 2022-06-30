@@ -1507,7 +1507,7 @@ function setHeight(value) {
 function setFlute(value) {
   settings.flute = value;
   flute = value;
-  inputfluteHidden.value = value;
+  inputFluteHidden.value = value;
 
   calculate();
   setLength(length);
@@ -1528,7 +1528,7 @@ function rotateY(angle) {
 }
 
 function updateControls() {
-  document.getElementById('inputFluteHidden').value = 0.16;
+  document.getElementById('inputFluteHidden').value = settings.flute;
   document.getElementById('inputLengthHidden').value = settings.size.length;
   document.getElementById('inputWidthHidden').value = settings.size.width;
   document.getElementById('inputHeightHidden').value = settings.size.height;
@@ -1539,7 +1539,7 @@ function updateControls() {
   document.getElementById('outputTotalPrice').textContent = totalPrice;
   document.getElementById('inputQuantityRange').value = settings.quantity;
   document.getElementById('inputQuantityInput').value = settings.quantity;
-  document.getElementById('inputFlute').value = 0.16;
+  document.getElementById('inputFlute').value = settings.flute;
   document.getElementById('inputLength').value = settings.size.length;
   document.getElementById('inputWidth').value = settings.size.width;
   document.getElementById('inputHeight').value = settings.size.height;
@@ -1570,39 +1570,3 @@ document.getElementById("HH_btn").onclick = function () { copy_values("HHL", "HH
 document.getElementById("WH_btn").onclick = function () { copy_values("WHL", "WHH", "WHW"); };
 document.getElementById("LH_btn").onclick = function () { copy_values("LHL", "LHH", "LHW"); };
 document.getElementById("BB_btn").onclick = function () { copy_values("BBL", "BBH", "BBW"); };
-
-/// Custom incrementation of input
-$(document).ready(function () {
-  jQuery('<div class="quantity-nav"><button class="quantity-button quantity-up">&#43;</button><button class="quantity-button quantity-down">&#8722;</button></div>').insertAfter('.quantity input');
-  jQuery('.quantity').each(function () {
-    var spinner = jQuery(this),
-      input = spinner.find('input[type="number"]'),
-      btnUp = spinner.find('.quantity-up'),
-      btnDown = spinner.find('.quantity-down'),
-      min = input.attr('min'),
-      max = input.attr('max');
-
-    btnUp.click(function () {
-      var oldValue = parseFloat(input.val());
-      if (oldValue >= max) {
-        var newVal = oldValue;
-      } else {
-        var newVal = oldValue + 0.125;
-      }
-      spinner.find("input").val(newVal);
-      spinner.find("input").trigger("change");
-    });
-
-    btnDown.click(function () {
-      var oldValue = parseFloat(input.val());
-      if (oldValue <= min) {
-        var newVal = oldValue;
-      } else {
-        var newVal = oldValue - 0.125;
-      }
-      spinner.find("input").val(newVal);
-      spinner.find("input").trigger("change");
-    });
-
-  });
-});
