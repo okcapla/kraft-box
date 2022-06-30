@@ -1220,7 +1220,7 @@ function calculate() {
         document.getElementById("BBL").innerText = Math.round(ansLS[0] * 100) / 100;
         document.getElementById("BBW").innerText = Math.round(ansLS[1] * 100) / 100;
         document.getElementById("BBH").innerText = Math.round(ansLS[2] * 100) / 100;
-        document.getElementById("BBP").innerText = Math.round(price_LS * 100) / 100;
+        document.getElementById("BBP").innerText = "$ " + Math.round(price_LS * 100) / 100;
         document.getElementById("BBPS").innerText = Math.round((Price - price_LS) / price_LS * 100 * 100) / 100 + " %";
         document.getElementById("BB").style.display = "inline-block";
       }
@@ -1237,7 +1237,7 @@ function calculate() {
         document.getElementById("NHL").innerText = Math.round(finalSuggestion_NoHandicup[0] * 100) / 100;
         document.getElementById("NHW").innerText = Math.round(finalSuggestion_NoHandicup[1] * 100) / 100;
         document.getElementById("NHH").innerText = Math.round(finalSuggestion_NoHandicup[2] * 100) / 100;
-        document.getElementById("NHP").innerText = Math.round(Price_NH * 100) / 100;
+        document.getElementById("NHP").innerText = "$ " + Math.round(Price_NH * 100) / 100;
         document.getElementById("NHPS").innerText = Math.round((Price - Price_NH) / Price * 100 * 100) / 100 + " %";
         document.getElementById("NH").style.display = "inline-block";
       }
@@ -1254,7 +1254,7 @@ function calculate() {
         document.getElementById("LHL").innerText = Math.round(finalSuggestion_LengthHandicup[0] * 100) / 100;
         document.getElementById("LHW").innerText = Math.round(finalSuggestion_LengthHandicup[1] * 100) / 100;
         document.getElementById("LHH").innerText = Math.round(finalSuggestion_LengthHandicup[2] * 100) / 100;
-        document.getElementById("LHP").innerText = Math.round(Price_LH * 100) / 100;
+        document.getElementById("LHP").innerText = "$ " + Math.round(Price_LH * 100) / 100;
         document.getElementById("LHPS").innerText = Math.round((Price - Price_LH) / Price * 100 * 100) / 100 + " %";
         document.getElementById("LH").style.display = "inline-block";
       }
@@ -1271,7 +1271,7 @@ function calculate() {
         document.getElementById("WHL").innerText = Math.round(finalSuggestion_WidthHandicup[0] * 100) / 100;
         document.getElementById("WHW").innerText = Math.round(finalSuggestion_WidthHandicup[1] * 100) / 100;
         document.getElementById("WHH").innerText = Math.round(finalSuggestion_WidthHandicup[2] * 100) / 100;
-        document.getElementById("WHP").innerText = Math.round(Price_WH * 100) / 100;
+        document.getElementById("WHP").innerText = "$ " + Math.round(Price_WH * 100) / 100;
         document.getElementById("WHPS").innerText = Math.round((Price - Price_WH) / Price * 100 * 100) / 100 + " %";
         document.getElementById("WH").style.display = "inline-block";
       }
@@ -1288,7 +1288,7 @@ function calculate() {
         document.getElementById("HHL").innerText = Math.round(finalSuggestion_HightHandicup[0] * 100) / 100;
         document.getElementById("HHW").innerText = Math.round(finalSuggestion_HightHandicup[1] * 100) / 100;
         document.getElementById("HHH").innerText = Math.round(finalSuggestion_HightHandicup[2] * 100) / 100;
-        document.getElementById("HHP").innerText = Math.round(Price_HH * 100) / 100;
+        document.getElementById("HHP").innerText = "$ " + Math.round(Price_HH * 100) / 100;
         document.getElementById("HHPS").innerText = Math.round((Price - Price_HH) / Price * 100 * 100) / 100 + " %";
         document.getElementById("HH").style.display = "inline-block";
       }
