@@ -401,13 +401,13 @@ input:focus {outline:none!important;}
 
 .result_column {
   display: none;
-  width: auto;
+  width: 60px;
 }
 
 .result_value {
  text-align: left;
  color: black; 
- font-size: 13px;
+ font-size: 15px;
  font-weight: 700;
 }
 
