@@ -408,7 +408,7 @@ input:focus {outline:none!important;}
 .result_value {
  text-align: left;
  color: black; 
- font-size: 13px;
+ font-size: 14px;
  font-weight: 700;
 }
 
@@ -420,9 +420,15 @@ input:focus {outline:none!important;}
  }
 
  .result_value_percent {
+  text-align: left;
   color: green;
+  font-size: 14px;
+ font-weight: 700;
  }
 
- result_value_percent_bb {
+ .result_value_percent_bb {
+  text-align: left;
   color: red;
+  font-size: 14px;
+ font-weight: 700;
  }
