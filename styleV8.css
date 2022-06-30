@@ -50,7 +50,7 @@
   background-image: url(https://uploads-ssl.webflow.com/61afc39aff60951ea66bc80e/6225363a9e20e3373339e96b_texture-kraft.jpg);
   border-top: 1.5px solid #74573E;
   border-bottom: 3px solid #74573E;
-  transform: translateZ(calc(var(--height) / 2));
+  transform: translateZ(calc(var(--length) / 2));
 }
 
 #back {
@@ -58,13 +58,13 @@
   background-image: url(https://uploads-ssl.webflow.com/61afc39aff60951ea66bc80e/6225363a9e20e3373339e96b_texture-kraft.jpg);
   border-top: 1.5px solid #74573E;
   border-bottom: 3px solid #74573E;
-  transform: rotateY(180deg) translateZ(calc(var(--height) / 2));
+  transform: rotateY(180deg) translateZ(calc(var(--length) / 2));
 }
 
 #left,
 #right {
   height: var(--length);
-  width: var(--height);
+  width: var(--length);
 }
 
 #left {
@@ -73,7 +73,7 @@
   background-repeat: repeat;
   transform: rotateY(90deg);
   border-bottom: 3px solid #74573E;
-  left: calc(0px - var(--height)/2);
+  left: calc(0px - var(--length)/2);
 }
 
 #right {
@@ -82,12 +82,12 @@
   background-repeat: repeat;
   transform: rotateY(90deg);
   border-bottom: 3px solid #74573E;
-  right: calc(0px - var(--height)/2);
+  right: calc(0px - var(--length)/2);
 }
 
 #top,
 #down {
-  height: var(--height);
+  height: var(--length);
   width: var(--width);
 }
 
@@ -97,31 +97,31 @@
   background-image: url(https://uploads-ssl.webflow.com/61afc39aff60951ea66bc80e/6225363a9e20e3373339e96b_texture-kraft.jpg);
   border-top: 3px solid #74573E;
   border-bottom: 3px solid #74573E;
-  top: calc(0px - var(--height)/2);
+  top: calc(0px - var(--length)/2);
 }
 
 #down {
   background-color: #5a3812;
   transform: rotateX(-90deg);
   border: 3px solid #74573E;
-  bottom: calc(0px - var(--height)/2);
+  bottom: calc(0px - var(--length)/2);
 }
 
 #top-opening {
   background-color: #74573E;
   transform: rotateX(90deg);
-  height: var(--height);
+  height: var(--length);
   width: calc(20px / 8);
-  top: calc(0px - var(--height)/2);
+  top: calc(0px - var(--length)/2);
   margin-left: calc(50% - (20px / 8) / 2);
 }
 
 #shadow {
   background-color: #000000;
-  bottom: calc(var(--shadowDistance) - var(--height)/2);
+  bottom: calc(var(--shadowDistance) - var(--length)/2);
   filter: blur(var(--shadowBlur));
   opacity: var(--shadowOpacity);
-  height: calc(var(--height) + 50px);
+  height: calc(var(--length) + 50px);
   width: calc(var(--width) + 50px);
   transform: skew(-45deg) rotateX(-90deg) translateY(0px);
 }
@@ -375,6 +375,7 @@ input[type=range]::-ms-thumb {
 
 input {border:0;outline:0;}
 input:focus {outline:none!important;}
+
 
 
 
