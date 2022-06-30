@@ -418,3 +418,11 @@ input:focus {outline:none!important;}
   font-size: 13px;
   font-weight: 600;
  }
+
+ .result_value_percent {
+  color: green;
+ }
+
+ result_value_percent_bb {
+  color: red;
+ }
