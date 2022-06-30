@@ -1296,11 +1296,11 @@ function calculate() {
         document.getElementById("HH").style.display = "none";
       }
 
-      document.getElementById("OriginalL").innerText = Math.round(L * 100) / 100;
-      document.getElementById("OriginalW").innerText = Math.round(W * 100) / 100;
-      document.getElementById("OriginalH").innerText = Math.round(H * 100) / 100;
-      document.getElementById("OriginalP").innerText = Math.round(Price * 100) / 100;
-      document.getElementById("OriginalPQ").innerText = Math.round(Q * Price * 100) / 100;
+      // document.getElementById("OriginalL").innerText = Math.round(L * 100) / 100;
+      // document.getElementById("OriginalW").innerText = Math.round(W * 100) / 100;
+      // document.getElementById("OriginalH").innerText = Math.round(H * 100) / 100;
+      // document.getElementById("OriginalP").innerText = Math.round(Price * 100) / 100;
+      // document.getElementById("OriginalPQ").innerText = Math.round(Q * Price * 100) / 100;
       document.getElementById("outputPricePerUnit").innerText = Math.round(Price * 100) / 100;
       document.getElementById("outputPricePerUnitHidden").innerText = Math.round(Price * 100) / 100;
       document.getElementById("outputTotalPrice").innerText = Math.round(Q * Price * 100) / 100;
