@@ -1368,9 +1368,9 @@ function updateStyleVars() {
   var boxLWD = (parseFloat(length) + parseFloat(width) + parseFloat(height));
 
   const styleVars = '--animationDelay: ' + settings.animationDelay + 's' +
-    ';--length: ' + ((length) * pixInchConverter) + 'px' +
+    ';--height: ' + ((length) * pixInchConverter) + 'px' +
     ';--width: ' + ((width) * pixInchConverter) + 'px' +
-    ';--height: ' + ((height) * pixInchConverter) + 'px' +
+    ';--length: ' + ((height) * pixInchConverter) + 'px' +
     ';--scale: ' + settings.size.scale +
     ';--shadowOpacity: ' + settings.shadow.opacity +
     ';--shadowBlur: ' + settings.shadow.blur + 'em' +
