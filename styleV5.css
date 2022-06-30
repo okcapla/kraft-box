@@ -393,7 +393,7 @@ input:focus {outline:none!important;}
   margin: 4px 2px;
   border-radius: 4px;
   cursor: pointer;
-  width: 5em;
+  width: 4.5em;
 }
 
 .result_container {
@@ -410,10 +410,12 @@ input:focus {outline:none!important;}
  text-align: left;
  color: black; 
  font-size: 13px;
+ font-weight: 700;
 }
 
 .row_title {
   text-align: left;
   color: #6b9ca1;
   font-size: 15px;
+  font-weight: 600;
  }
