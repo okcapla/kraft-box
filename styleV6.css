@@ -380,7 +380,6 @@ input:focus {outline:none!important;}
 
 
 
-
 .control_button {
   background-color: #04AA6D;
   border: none;
@@ -402,8 +401,7 @@ input:focus {outline:none!important;}
 
 .result_column {
   display: none;
-  margin: 0.1em;
-  width: 4.5em;
+  width: auto;
 }
 
 .result_value {
