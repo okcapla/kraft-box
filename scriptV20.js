@@ -1542,6 +1542,7 @@ function copy_values(length_id, height_id, width_id) {
   document.getElementById("inputWidth").value = document.getElementById(width_id).innerText;
   document.getElementById("inputHeight").value = document.getElementById(height_id).innerText;
   document.getElementById("inputLength").value = document.getElementById(length_id).innerText;
+  updateStyleVars();
   calculate();
 }
 
