@@ -1352,6 +1352,7 @@ document.addEventListener('DOMContentLoaded', function () {
       dielineMarkup = dielineMarkupMultiplier
       dielineMarkupLowQ = 8.75
       dielineRequestHidden.value = "true";
+      alert("Hello! I am an alert box!!");
       // document.getElementById("instructions").style.display = "block";
       calculate();
     } else {
