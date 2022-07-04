@@ -1296,9 +1296,9 @@ function calculate() {
         document.getElementById("HH").style.display = "none";
       }
 
-//       document.getElementById("OriginalL").innerText = Math.round(L * 100) / 100;
-//       document.getElementById("OriginalW").innerText = Math.round(W * 100) / 100;
-//       document.getElementById("OriginalH").innerText = Math.round(H * 100) / 100;
+      document.getElementById("OriginalL").innerText = Math.round(L * 100) / 100;
+      document.getElementById("OriginalW").innerText = Math.round(W * 100) / 100;
+      document.getElementById("OriginalH").innerText = Math.round(H * 100) / 100;
       // document.getElementById("OriginalP").innerText = Math.round(Price * 100) / 100;
       // document.getElementById("OriginalPQ").innerText = Math.round(Q * Price * 100) / 100;
       document.getElementById("outputPricePerUnit").innerText = Math.round(Price * 100) / 100;
@@ -1335,15 +1335,15 @@ document.addEventListener('DOMContentLoaded', function () {
     checkbox.checked = true;
     dielineMarkup = dielineMarkupMultiplier
     dielineMarkupLowQ = 8.75
-    dielineRequestHidden.value = "true";
-    document.getElementById("instructions").style.display = "block";
+    dielineRequestHidden.value = "true"
+    document.getElementById("instructions").style.display = "block"
     calculate();
   } else {
     checkbox.checked = false;
     dielineMarkup = 1
     dielineMarkupLowQ = 1
-    dielineRequestHidden.value = "false";
-    document.getElementById("instructions").style.display = "none";
+    dielineRequestHidden.value = "false"
+    document.getElementById("instructions").style.display = "none"
     calculate();
   }
 
@@ -1351,14 +1351,14 @@ document.addEventListener('DOMContentLoaded', function () {
     if (checkbox.checked) {
       dielineMarkup = dielineMarkupMultiplier
       dielineMarkupLowQ = 8.75
-      dielineRequestHidden.value = "true";
-      document.getElementById("instructions").style.display = "block";
+      dielineRequestHidden.value = "true"
+      document.getElementById("instructions").style.display = "block"
       calculate();
     } else {
       dielineMarkup = 1
       dielineMarkupLowQ = 1
-      dielineRequestHidden.value = "false";
-      document.getElementById("instructions").style.display = "none";
+      dielineRequestHidden.value = "false"
+      document.getElementById("instructions").style.display = "none"
       calculate();
     }
   });
