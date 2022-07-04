@@ -393,6 +393,7 @@ input:focus {outline:none!important;}
   margin: 4px 2px;
   border-radius: 100px;
   cursor: pointer;
+  font-weight: 600;
   width: 50px;
 }
 
