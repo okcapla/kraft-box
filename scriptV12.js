@@ -1335,14 +1335,14 @@ document.addEventListener('DOMContentLoaded', function () {
     checkbox.checked = true;
     dielineMarkup = dielineMarkupMultiplier
     dielineMarkupLowQ = 8.75
-    dielineRequestHidden.value = "true"
-    document.getElementById("instructions").style.display = "block"
+    dielineRequestHidden.value = "true";
+    document.getElementById("instructions").style.display = "block";
     calculate();
   } else {
     checkbox.checked = false;
     dielineMarkup = 1
     dielineMarkupLowQ = 1
-    dielineRequestHidden.value = "false"
+    dielineRequestHidden.value = "false";
     document.getElementById("instructions").style.display = "none"
     calculate();
   }
@@ -1351,14 +1351,14 @@ document.addEventListener('DOMContentLoaded', function () {
     if (checkbox.checked) {
       dielineMarkup = dielineMarkupMultiplier
       dielineMarkupLowQ = 8.75
-      dielineRequestHidden.value = "true"
-      document.getElementById("instructions").style.display = "block"
+      dielineRequestHidden.value = "true";
+      document.getElementById("instructions").style.display = "block";
       calculate();
     } else {
       dielineMarkup = 1
       dielineMarkupLowQ = 1
-      dielineRequestHidden.value = "false"
-      document.getElementById("instructions").style.display = "none"
+      dielineRequestHidden.value = "false";
+      document.getElementById("instructions").style.display = "none";
       calculate();
     }
   });
