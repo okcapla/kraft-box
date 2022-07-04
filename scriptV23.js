@@ -65,9 +65,6 @@ const minBoxHeight = 3.0;
 /// Minimum value for box dimension
 const minLengthPlusWidth = 9.0;
 
-/// Addition length width and height
-var boxLWD;
-
 /// Maximum values for box dimensions
 var maxBoxLength = (((boardLength - 1.5 - (flute * 4)) * 0.5) - minBoxWidth);
 var maxBoxWidth = (((boardLength - 1.5 - (flute * 4)) * 0.5) - minBoxLength);
@@ -1542,9 +1539,9 @@ function copy_values(length_id, height_id, width_id) {
   document.getElementById("inputWidth").value = document.getElementById(width_id).innerText;
   document.getElementById("inputHeight").value = document.getElementById(height_id).innerText;
   document.getElementById("inputLength").value = document.getElementById(length_id).innerText;
-  setHeight(height_id);
-  setWidth(width_id);
-  setLength(length_id);
+  setHeight(parseFloat(height_id));
+  setWidth(parseFloat(width_id));
+  setLength(parseFloat(length_id));
   calculate();
 }
 
