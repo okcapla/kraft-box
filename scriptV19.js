@@ -1334,8 +1334,7 @@ document.addEventListener('DOMContentLoaded', function () {
       dielineMarkup = dielineMarkupMultiplier
       dielineMarkupLowQ = 8.75
       dielineRequestHidden.value = "true";
-      alert("hello");
-			document.getElementById("instructions").style.display = "block";
+      document.getElementById("instructions").style.display = "block";
     } else {
       dielineMarkup = 1
       dielineMarkupLowQ = 1
