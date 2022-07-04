@@ -1,18 +1,3 @@
-/// Get variables from URL
-/// Only if the values are presented
-const myKeyValues = window.location.search;
-const urlParams = new URLSearchParams(myKeyValues);
-const uItemID = urlParams.get('uItemID');
-const uFlute = urlParams.get('uFlute');
-const uLength = urlParams.get('uLength');
-const uWidth = urlParams.get('uWidth');
-const uHeight = urlParams.get('uHeight');
-const uQuantity = urlParams.get('uQuantity');
-const uDielineRequest = urlParams.get('uDielineRequest');
-const uDesignID = urlParams.get('uDesignID');
-const uTitle = urlParams.get('uTitle');
-const uCert = urlParams.get('uCert');
-
 /// Initial Vlues for Dimensions
 const settings = {
   rootElementId: 'cardboard-box',
