@@ -1311,45 +1311,6 @@ function calculate() {
   // document.getElementById("error_quantity").style.visibility = isNaN(Q) ? 'visible' : 'hidden';
 }
 
-/// Listen for changes in Dieline Request Toggle
-document.addEventListener('DOMContentLoaded', function () {
-  var checkbox = document.querySelector('input[id="switch"]');
-  var inst = document.getElementById("instructions").style.display;
-
-  if (uDielineRequest == "true") {
-    checkbox.checked = true;
-    dielineMarkup = dielineMarkupMultiplier
-    dielineMarkupLowQ = 8.75
-    dielineRequestHidden.value = "true";
-    document.getElementById("instructions").style.display = "block";
-    calculate();
-  } else {
-    checkbox.checked = false;
-    dielineMarkup = 1
-    dielineMarkupLowQ = 1
-    dielineRequestHidden.value = "false";
-    document.getElementById("instructions").style.display = "none";
-    calculate();
-  }
-
-  checkbox.addEventListener('change', function () {
-    if (checkbox.checked) {
-      dielineMarkup = dielineMarkupMultiplier
-      dielineMarkupLowQ = 8.75
-      dielineRequestHidden.value = "true";
-      alert("hello");
-      document.getElementById("instructions").style.display = "block";
-      calculate();
-    } else {
-      dielineMarkup = 1
-      dielineMarkupLowQ = 1
-      dielineRequestHidden.value = "false";
-      document.getElementById("instructions").style.display = "none";
-      calculate();
-    }
-  });
-}); 
-
 function updateStyleVars() {
   var boxLWD = (parseFloat(length) + parseFloat(width) + parseFloat(height));
 
