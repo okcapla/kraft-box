@@ -444,15 +444,15 @@ input:focus {outline:none!important;}
   background-color: white;
 }
 .mytable-head {
-  border: 1px solid black;
+  border: none;
   margin-bottom: 0;
   padding-bottom: 0;
 }
 .mytable-head td {
-  border: 1px solid black;
+  border: none;
 }
 .mytable-body {
-  border: 1px solid black;
+  border: none;
   border-top: 0;
   margin-top: 0;
   padding-top: 0;
@@ -460,16 +460,16 @@ input:focus {outline:none!important;}
   padding-bottom: 0;
 }
 .mytable-body td {
-  border: 1px solid black;
+  border: none;
   border-top: 0;
 }
 .mytable-footer {
-  border: 1px solid black;
+  border: nonek;
   border-top: 0;
   margin-top: 0;
   padding-top: 0;
 }
 .mytable-footer td {
-  border: 1px solid black;
+  border: none;
   border-top: 0;
 }
