@@ -1547,6 +1547,7 @@ function copy_values(length_id, height_id, width_id) {
   width = parseFloat(width_id); 
   height = parseFloat(height_id); 
   flute = parseFloat(flute);
+  print(height);
   updateStyleVars();
   calculate();
 }
