@@ -1543,10 +1543,9 @@ function copy_values(length_id, height_id, width_id) {
   document.getElementById("inputWidth").value = document.getElementById(width_id).innerText;
   document.getElementById("inputHeight").value = document.getElementById(height_id).innerText;
   document.getElementById("inputLength").value = document.getElementById(length_id).innerText;
-  length = parseFloat(length_id);
-  width = parseFloat(width_id); 
-  height = parseFloat(height_id); 
-  alert(parseFloat(length_id));
+  length = document.getElementById("inputLength").value;
+  width = document.getElementById("inputWidth").value;
+  height = document.getElementById("inputHeight").value;
   updateStyleVars();
   calculate();
 }
