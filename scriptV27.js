@@ -1283,10 +1283,14 @@ function calculate() {
       document.getElementById("OriginalH").innerText = Math.round(H * 100) / 100;
       // document.getElementById("OriginalP").innerText = Math.round(Price * 100) / 100;
       // document.getElementById("OriginalPQ").innerText = Math.round(Q * Price * 100) / 100;
+      document.getElementById("outputPricePerUnit").value = Math.round(Price * 100) / 100;
+      document.getElementById("outputPricePerUnitHidden").value = Math.round(Price * 100) / 100;
       document.getElementById("outputPricePerUnit").innerText = Math.round(Price * 100) / 100;
       document.getElementById("outputPricePerUnitHidden").innerText = Math.round(Price * 100) / 100;
       document.getElementById("outputTotalPrice").innerText = Math.round(Q * Price * 100) / 100;
       document.getElementById("outputTotalPriceHidden").innerText = Math.round(Q * Price * 100) / 100;
+      document.getElementById("outputTotalPrice").value = Math.round(Q * Price * 100) / 100;
+      document.getElementById("outputTotalPriceHidden").value = Math.round(Q * Price * 100) / 100;
 
       document.getElementById("Original").style.display = "inline-block";
       // document.getElementById("result_error_panel").style.display = "none";
