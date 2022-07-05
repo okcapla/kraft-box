@@ -33,19 +33,12 @@ const settings = {
   
   /// The pixInchConverter mulitplier used to scale pixels to inches visually
   const pixInchConverter = 28.0;
-  
-  /// Glue flap size
-  const glueFlap = 1.5;
-  
+
   /// Flute size
   var flute = 0.16;
   
   var optLengthMax = 0; //0.2
   var optWidthMax = 0; //0.16 ## not sure about that here. We should discuss it!
-  
-  /// Borad maximum and minimum size
-  const boardLength = 96.0;
-  const boardWidth = 48.0;
   
   // This number should be between 0 and 1
   // It denotes what scale of change is acceptable in exchange of more boxes
@@ -71,11 +64,6 @@ const settings = {
   var length = settings.size.length;
   var width = settings.size.width;
   var height = settings.size.height;
-  
-  const minQuantity = 1;
-  const maxQuantity = 5000;
-  /// Price increase based on request for print
-  const dielineMarkupMultiplier = 1.20;
   
   var quantity = settings.quantity;
   var dielineMarkup = 1;
